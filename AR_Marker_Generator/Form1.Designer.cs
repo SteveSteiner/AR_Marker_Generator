@@ -37,22 +37,24 @@
             this.txt_CodeContent = new System.Windows.Forms.TextBox();
             this.txt_Icon = new System.Windows.Forms.TextBox();
             this.cbx_Colors = new System.Windows.Forms.ComboBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // btn_CreateCodeMarker
             // 
             this.btn_CreateCodeMarker.Location = new System.Drawing.Point(12, 93);
             this.btn_CreateCodeMarker.Name = "btn_CreateCodeMarker";
-            this.btn_CreateCodeMarker.Size = new System.Drawing.Size(420, 23);
+            this.btn_CreateCodeMarker.Size = new System.Drawing.Size(428, 23);
             this.btn_CreateCodeMarker.TabIndex = 0;
             this.btn_CreateCodeMarker.Text = "Create Code Marker";
             this.btn_CreateCodeMarker.UseVisualStyleBackColor = true;
             // 
             // btn_SaveCodeToFile
             // 
-            this.btn_SaveCodeToFile.Location = new System.Drawing.Point(12, 539);
+            this.btn_SaveCodeToFile.Location = new System.Drawing.Point(15, 554);
             this.btn_SaveCodeToFile.Name = "btn_SaveCodeToFile";
-            this.btn_SaveCodeToFile.Size = new System.Drawing.Size(420, 23);
+            this.btn_SaveCodeToFile.Size = new System.Drawing.Size(425, 23);
             this.btn_SaveCodeToFile.TabIndex = 1;
             this.btn_SaveCodeToFile.Text = "Save Code to File...";
             this.btn_SaveCodeToFile.UseVisualStyleBackColor = true;
@@ -87,7 +89,7 @@
             // chx_IconEnabled
             // 
             this.chx_IconEnabled.AutoSize = true;
-            this.chx_IconEnabled.Location = new System.Drawing.Point(231, 66);
+            this.chx_IconEnabled.Location = new System.Drawing.Point(231, 69);
             this.chx_IconEnabled.Name = "chx_IconEnabled";
             this.chx_IconEnabled.Size = new System.Drawing.Size(15, 14);
             this.chx_IconEnabled.TabIndex = 5;
@@ -97,14 +99,14 @@
             // 
             this.txt_CodeContent.Location = new System.Drawing.Point(12, 27);
             this.txt_CodeContent.Name = "txt_CodeContent";
-            this.txt_CodeContent.Size = new System.Drawing.Size(420, 20);
+            this.txt_CodeContent.Size = new System.Drawing.Size(428, 20);
             this.txt_CodeContent.TabIndex = 6;
             // 
             // txt_Icon
             // 
             this.txt_Icon.Location = new System.Drawing.Point(252, 66);
             this.txt_Icon.Name = "txt_Icon";
-            this.txt_Icon.Size = new System.Drawing.Size(180, 20);
+            this.txt_Icon.Size = new System.Drawing.Size(188, 20);
             this.txt_Icon.TabIndex = 7;
             // 
             // cbx_Colors
@@ -115,11 +117,20 @@
             this.cbx_Colors.Size = new System.Drawing.Size(199, 21);
             this.cbx_Colors.TabIndex = 8;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(15, 123);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(425, 425);
+            this.pictureBox1.TabIndex = 9;
+            this.pictureBox1.TabStop = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(444, 574);
+            this.ClientSize = new System.Drawing.Size(452, 584);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.cbx_Colors);
             this.Controls.Add(this.txt_Icon);
             this.Controls.Add(this.txt_CodeContent);
@@ -132,6 +143,7 @@
             this.Name = "Form1";
             this.Text = "AR_Marker_Generator";
             this.Load += new System.EventHandler(this.Form1_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -148,6 +160,7 @@
         private System.Windows.Forms.TextBox txt_CodeContent;
         private System.Windows.Forms.TextBox txt_Icon;
         private System.Windows.Forms.ComboBox cbx_Colors;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 
