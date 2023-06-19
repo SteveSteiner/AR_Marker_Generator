@@ -46,7 +46,7 @@
             this.btn_CreateCodeMarker.Location = new System.Drawing.Point(12, 93);
             this.btn_CreateCodeMarker.Name = "btn_CreateCodeMarker";
             this.btn_CreateCodeMarker.Size = new System.Drawing.Size(428, 23);
-            this.btn_CreateCodeMarker.TabIndex = 0;
+            this.btn_CreateCodeMarker.TabIndex = 4;
             this.btn_CreateCodeMarker.Text = "Create Code Marker";
             this.btn_CreateCodeMarker.UseVisualStyleBackColor = true;
             this.btn_CreateCodeMarker.Click += new System.EventHandler(this.btn_CreateCodeMarker_Click);
@@ -56,7 +56,7 @@
             this.btn_SaveCodeToFile.Location = new System.Drawing.Point(15, 554);
             this.btn_SaveCodeToFile.Name = "btn_SaveCodeToFile";
             this.btn_SaveCodeToFile.Size = new System.Drawing.Size(425, 23);
-            this.btn_SaveCodeToFile.TabIndex = 1;
+            this.btn_SaveCodeToFile.TabIndex = 5;
             this.btn_SaveCodeToFile.Text = "Save Code to File...";
             this.btn_SaveCodeToFile.UseVisualStyleBackColor = true;
             this.btn_SaveCodeToFile.Click += new System.EventHandler(this.btn_SaveCodeToFile_Click);
@@ -73,7 +73,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(12, 50);
+            this.label2.Location = new System.Drawing.Point(9, 50);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(98, 13);
             this.label2.TabIndex = 3;
@@ -94,7 +94,7 @@
             this.chx_IconEnabled.Location = new System.Drawing.Point(231, 69);
             this.chx_IconEnabled.Name = "chx_IconEnabled";
             this.chx_IconEnabled.Size = new System.Drawing.Size(15, 14);
-            this.chx_IconEnabled.TabIndex = 5;
+            this.chx_IconEnabled.TabIndex = 2;
             this.chx_IconEnabled.UseVisualStyleBackColor = true;
             this.chx_IconEnabled.CheckedChanged += new System.EventHandler(this.chx_IconEnabled_CheckedChanged);
             // 
@@ -103,14 +103,14 @@
             this.txt_CodeContent.Location = new System.Drawing.Point(12, 27);
             this.txt_CodeContent.Name = "txt_CodeContent";
             this.txt_CodeContent.Size = new System.Drawing.Size(428, 20);
-            this.txt_CodeContent.TabIndex = 6;
+            this.txt_CodeContent.TabIndex = 0;
             // 
             // txt_Icon
             // 
             this.txt_Icon.Location = new System.Drawing.Point(252, 66);
             this.txt_Icon.Name = "txt_Icon";
             this.txt_Icon.Size = new System.Drawing.Size(188, 20);
-            this.txt_Icon.TabIndex = 7;
+            this.txt_Icon.TabIndex = 3;
             // 
             // cbx_Colors
             // 
@@ -118,7 +118,7 @@
             this.cbx_Colors.Location = new System.Drawing.Point(12, 66);
             this.cbx_Colors.Name = "cbx_Colors";
             this.cbx_Colors.Size = new System.Drawing.Size(199, 21);
-            this.cbx_Colors.TabIndex = 8;
+            this.cbx_Colors.TabIndex = 1;
             // 
             // pbx_CodeDisplay
             // 
