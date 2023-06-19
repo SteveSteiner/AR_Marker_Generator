@@ -36,7 +36,13 @@ namespace AR_Marker_Generator
 
         private void btn_SaveCodeToFile_Click(object sender, EventArgs e)
         {
-            
+            SaveFileDialog dialog = new SaveFileDialog();
+            dialog.Filter = "JPG for Marker (*.jpg)|*.jpg|All files (*.*)|*.*";
+            dialog.FileName = txt_CodeContent.Text;
+            if (dialog.ShowDialog() == DialogResult.OK)
+            {
+                pbx_CodeDisplay.Image.Save(dialog.FileName, ImageFormat.Jpeg);
+            }
         }
 
         private Bitmap CreateQRCode(string type, int length)
@@ -81,7 +87,16 @@ namespace AR_Marker_Generator
 
         private void PopulateColorPicker()
         {
-            
+            ArrayList ColorList = new ArrayList();
+            Type colorType = typeof(System.Drawing.Color);
+            PropertyInfo[] propInfoList = colorType.GetProperties(BindingFlags.Static |
+                                          BindingFlags.DeclaredOnly | BindingFlags.Public);
+
+            foreach (PropertyInfo c in propInfoList)
+            {
+                this.cbx_Colors.Items.Add(c.Name);
+            }
+            cbx_Colors.SelectedIndex = 8;
         }
 
         private void chx_IconEnabled_CheckedChanged(object sender, EventArgs e)
