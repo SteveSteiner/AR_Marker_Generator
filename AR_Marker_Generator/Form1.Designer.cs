@@ -37,8 +37,8 @@
             this.txt_CodeContent = new System.Windows.Forms.TextBox();
             this.txt_Icon = new System.Windows.Forms.TextBox();
             this.cbx_Colors = new System.Windows.Forms.ComboBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.pbx_CodeDisplay = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pbx_CodeDisplay)).BeginInit();
             this.SuspendLayout();
             // 
             // btn_CreateCodeMarker
@@ -49,6 +49,7 @@
             this.btn_CreateCodeMarker.TabIndex = 0;
             this.btn_CreateCodeMarker.Text = "Create Code Marker";
             this.btn_CreateCodeMarker.UseVisualStyleBackColor = true;
+            this.btn_CreateCodeMarker.Click += new System.EventHandler(this.btn_CreateCodeMarker_Click);
             // 
             // btn_SaveCodeToFile
             // 
@@ -58,6 +59,7 @@
             this.btn_SaveCodeToFile.TabIndex = 1;
             this.btn_SaveCodeToFile.Text = "Save Code to File...";
             this.btn_SaveCodeToFile.UseVisualStyleBackColor = true;
+            this.btn_SaveCodeToFile.Click += new System.EventHandler(this.btn_SaveCodeToFile_Click);
             // 
             // label1
             // 
@@ -94,6 +96,7 @@
             this.chx_IconEnabled.Size = new System.Drawing.Size(15, 14);
             this.chx_IconEnabled.TabIndex = 5;
             this.chx_IconEnabled.UseVisualStyleBackColor = true;
+            this.chx_IconEnabled.CheckedChanged += new System.EventHandler(this.chx_IconEnabled_CheckedChanged);
             // 
             // txt_CodeContent
             // 
@@ -117,20 +120,20 @@
             this.cbx_Colors.Size = new System.Drawing.Size(199, 21);
             this.cbx_Colors.TabIndex = 8;
             // 
-            // pictureBox1
+            // pbx_CodeDisplay
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(15, 123);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(425, 425);
-            this.pictureBox1.TabIndex = 9;
-            this.pictureBox1.TabStop = false;
+            this.pbx_CodeDisplay.Location = new System.Drawing.Point(15, 123);
+            this.pbx_CodeDisplay.Name = "pbx_CodeDisplay";
+            this.pbx_CodeDisplay.Size = new System.Drawing.Size(425, 425);
+            this.pbx_CodeDisplay.TabIndex = 9;
+            this.pbx_CodeDisplay.TabStop = false;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(452, 584);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.pbx_CodeDisplay);
             this.Controls.Add(this.cbx_Colors);
             this.Controls.Add(this.txt_Icon);
             this.Controls.Add(this.txt_CodeContent);
@@ -143,7 +146,7 @@
             this.Name = "Form1";
             this.Text = "AR_Marker_Generator";
             this.Load += new System.EventHandler(this.Form1_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbx_CodeDisplay)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -160,7 +163,7 @@
         private System.Windows.Forms.TextBox txt_CodeContent;
         private System.Windows.Forms.TextBox txt_Icon;
         private System.Windows.Forms.ComboBox cbx_Colors;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pbx_CodeDisplay;
     }
 }
 
