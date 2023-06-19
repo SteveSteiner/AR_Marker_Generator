@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33516.290
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AR_Marker_Generator", "AR_Marker_Generator\AR_Marker_Generator.csproj", "{DDEFECAC-D91A-4A98-BA14-0C47D78A9C22}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DDEFECAC-D91A-4A98-BA14-0C47D78A9C22}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DDEFECAC-D91A-4A98-BA14-0C47D78A9C22}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DDEFECAC-D91A-4A98-BA14-0C47D78A9C22}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DDEFECAC-D91A-4A98-BA14-0C47D78A9C22}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DADBE26D-34EB-4191-B0E6-849095C4DA6E}
+	EndGlobalSection
+EndGlobal
